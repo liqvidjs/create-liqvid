@@ -1,0 +1,52 @@
+{
+  "name": "liqvid-scripts",
+  "version": "0.0.5",
+  "description": "Configuration and scripts for Liqvid.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liqvidjs/create-liqvid.git",
+    "directory": "packages/liqvid-scripts"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/liqvidjs/create-liqvid/issues"
+  },
+  "files": [
+    "scripts"
+  ],
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "react-dev-utils": "^11.0.3"
+  },
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
+  },
+  "peerDependencies": {
+    "react": ">= 16",
+    "typescript": "^3.2.1 || ^4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
