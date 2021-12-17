@@ -30,6 +30,7 @@ app.use("/", async (req, res, next) => {
 
 app.use("/", express.static("."));
 app.listen(port);
+console.log(`Go to http://localhost:${port} to see your video!`);
 
 /* livereload */
 const livereload = require("livereload");
