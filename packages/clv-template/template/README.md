@@ -6,14 +6,14 @@ Clone this repository, then do
 
 ```bash
 npm install
-npm start
+liqvid serve
 ```
 
 ## Recording
 
 Click on the recording (circle) icon in the controls.
 
-Select Markers for recording (to record Audio, you must access the page over HTTPS). Use the keyboard command to start/stop recording. Then:
+Select Markers for recording. Use the keyboard command to start/stop recording. Then:
 
 1. Save the audio file (if any) to `audio/audio.webm`.
 
@@ -23,20 +23,20 @@ Select Markers for recording (to record Audio, you must access the page over HTT
 
 ## Replaying
 
-To view the code recording, change `src/production/media-url.ts` to export `"."`. (Once you are satisfied with your recording, you should upload your audio files to a static assets host and put that as the media URL instead.) Then compile in **production** mode:
+To view the code recording, change `src/@production/media-url.ts` to export `"."`. (Once you are satisfied with your recording, you should upload your audio files to a static assets host and put that as the media URL instead.) Then compile in **production** mode:
 
 ```bash
-NODE_ENV=production npm start
+liqvid build
 ```
 
 ## Mastering
 
-See the [Mastering guide](https://liqvidjs.org/docs/guide/mastering#audio) for how to fix the browser recording (which doesn't come with the metadata needed for seeking) and convert it to mp4.
+After recording, run [`liqvid audio convert`](https://liqvidjs.org/docs/cli/audio#convert) on any `.webm` files you record.
 
-To generate thumbnail previews for the ractive, use [`rp-master thumbs`](https://liqvidjs.org/docs/rp-master/thumbs). These should again be uploaded to your static assets host.
+To generate thumbnail previews for the ractive, use [`liqvid thumbs`](https://liqvidjs.org/docs/cli/thumbs). These should again be uploaded to your static assets host.
 
-To produce a static rendering of the ractive, use [`rp-master render`](https://liqvidjs.org/docs/rp-master/render/).
+To produce a static rendering of the ractive, use [`liqvid render`](https://liqvidjs.org/docs/cli/render/).
 
 ## Tips
 
-Beware that `@env` is a magic directory that refers to either `src/development` or `src/production` depending on `NODE_ENV`. This is specified in `webpack.config.js`.
+Beware that `@env` is a magic directory that refers to either `src/@development` or `src/@production` depending on `NODE_ENV`. This is specified in `webpack.config.js`.
