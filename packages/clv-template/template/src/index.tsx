@@ -1,4 +1,4 @@
-import * as ReactDOM from "react-dom";
+import {createRoot} from "react-dom/client";
 
 import {Player} from "liqvid";
 
@@ -14,4 +14,4 @@ function Lesson() {
   );
 }
 
-ReactDOM.render(<Lesson/>, document.querySelector("main"));
+createRoot(document.querySelector("main")).render(<Lesson />);

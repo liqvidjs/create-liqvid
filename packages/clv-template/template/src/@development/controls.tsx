@@ -1,11 +1,3 @@
-import {Player} from "liqvid";
-import {RecordingControl} from "rp-recording";
+import {AudioRecording, RecordingControl} from "@liqvid/recording";
 
-export default <>
-  {Player.defaultControlsLeft}
-
-  <div className="rp-controls-right">
-    <RecordingControl/>
-    {Player.defaultControlsRight}
-  </div>
-</>;
+export default [<RecordingControl plugins={[AudioRecording]}/>];
