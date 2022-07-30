@@ -4,20 +4,22 @@
       "start": "liqvid serve"
     },
     "dependencies": {
-      "@liqvid/cli": "^1.0.3",
+      "@liqvid/cli": "^1.0.5",
+      "@liqvid/recording": "^0.1.0",
       "@types/express": "^4.17.13",
-      "@types/node": "^17.0.21",
-      "@types/react": "^17.0.40",
-      "@types/react-dom": "^17.0.13",
-      "liqvid": "^2.1.1",
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
-      "rp-recording": "^2.2.3",
-      "ts-loader": "^9.2.8",
-      "ts-node": "^10.7.0",
-      "typescript": "^4.6.2",
-      "webpack": "^5.70.0",
-      "webpack-cli": "^4.9.2"
+      "@types/node": "^18.6.2",
+      "@types/react": "^18.0.15",
+      "@types/react-dom": "^18.0.6",
+      "liqvid": "^2.1.7",
+      "liqvid-scripts": "0.0.5",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "rp-recording": "^2.3.0",
+      "ts-loader": "^9.3.1",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.7.4",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0"
     }
   }
 }
